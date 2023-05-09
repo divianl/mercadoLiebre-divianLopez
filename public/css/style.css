@@ -115,7 +115,10 @@ article{
 
 footer{
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;
+    justify-items: center;
+    justify-content: space-around;
+    border: solid brown;*/
 }
 
 /*Standard Media query 576, 768, 992, 1200*/
