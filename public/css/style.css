@@ -1,0 +1,143 @@
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+*{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+/* font*/
+.titulares b{
+    font-size: 24px;
+}
+.precio{
+    font-size: 18px;
+}
+
+.descuento, .nombre-producto{
+    font-size: 16px;
+}
+
+.nb2{
+    display: flex;
+}
+
+.nb2 li{
+    margin-right: 5px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    width: 100vw;
+    height: 95vh;
+    background: #ebebeb;
+}
+/* header*/
+
+header{
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    background: #EAC926;
+}
+.header1{
+    display: flex;
+    width: 90%;
+    border: solid green;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50%;
+}
+/* main */
+.main{
+    background: gray;
+}
+.banner img{
+    width: 100%;
+}
+.ultima-vista{
+    display: flex;
+    flex-direction: column;
+}
+
+article{
+    width: 100%;
+}
+
+.producto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid purple;
+}
+.producto-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.imagen1, .imagen2, .imagen3, .imagen4 {
+    width: 100%;
+}  
+.color{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid yellow;
+}
+
+.color img{
+    width: 60%;
+    border: solid red;
+}
+/*footer*/
+.dark-gray{
+    color: #666
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Standard Media query 576, 768, 992, 1200*/
+
+
+@media screen and (min-width: 576px) {
+    /*body{
+        background-color: green;
+    }*/
+}
+@media screen and (min-width: 768px) {
+    body{
+        background-color: yellow;
+    }
+}
+@media screen and (min-width: 992px) {
+    body{
+        background-color: blue;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body{
+        background-color: red;
+    }
+}
