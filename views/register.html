@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-    <title>Registro</title>
+    <title>Formulario de Registro</title>
 </head>
 <body>
     <header>
@@ -55,32 +56,32 @@
         </div> 
     </header>
     <main>
-    <div class="formulario">
-        <form action="https://mercadoliebre-divianlopez-server.onrender.com/register" method="POST">
-            <div>
+    <div class="formulario-register">
+        <form action="https://mercadoliebre-divianlopez-server.onrender.com/register" method="POST" class="formulario1">
+            <div class="uno">
                 <label for="name">Nombre y apellido:</label>
                 <input type="text" name="name" placeholder="Nombre y apellido" class="input">
                 <span class="feedback"></span>
             </div>
-            <div>
+            <div class="uno">
                 <label for="usuario">Nombre de Usuario:</label>
                 <input type="text" name="usuario" placeholder="Nombre de Usuario" class="input">
                 <span class="feedback"></span>
             </div>
-            <div>
+            <div class="uno">
                 <label for="fecha">Fecha de nacimiento:</label>
                 <input type="date" name="fecha" class="input">
             </div>
-            <div>
+            <div class="uno">
                 <label for="domicilio">Domicilio:</label>
                 <input type="text" name="domicilio" placeholder="Escriba la dirección de su domicilio" class="input">
             </div>
-            <div>
+            <div class="uno">
                 <label for="tipo-usuario">Perfil del usuario:</label>
                 <label><input type="radio" name="tipo-usuario" value="Comprador">Comprador</label>
                 <label><input type="radio" name="tipo-usuario" value="Vendedor">Vendedor</label>
             </div>
-            <div>
+            <div class="uno">
                 <label>Categorias de Interés:</label>
                 <label><input type="checkbox" value="electro">Electro</label>
                 <label><input type="checkbox" value="moda">Moda</label>
@@ -88,15 +89,15 @@
                 <label><input type="checkbox" value="juguteria">Juguteria</label>   
                 <label><input type="checkbox" value="vidaSana">Vida Sana</label>
             </div>
-            <div>
+            <div class="uno">
                 <label>Foto de Usuario:</label>
                 <input type="file" name="foto-usuario" class="input">
             </div>
-            <div>
+            <div class="uno">
                 <label>Contraseña:</label>
                 <input type="password" required="" class="input">
             </div>
-            <div>
+            <div class="uno">
                 <label>Confimar contraseña:</label>
                 <input type= "password" required="" class="input">
             </div>
@@ -109,25 +110,28 @@
     </div>
     </main>
     <footer>
-        <article class="footer-info">
-            <i class="fa-sharp fa-solid fa-credit-card icono-footer"></i>
-            <h3>Pagá con tarjeta o en efectivo</h3>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-        </article>
-        
-        <article class="footer-info">
-            <i class="fa-solid fa-gift icono-footer"></i>
-            <h3>Envío gratis desde $ 2.500</h3>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
-        </article>
-        
-        <article class="footer-info">
-            <i class="fa-solid fa-user-shield icono-footer"></i>
-            <h3>Seguridad, de principio a fin</h3>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
-        </article>
-        
-        <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        <div class="footer1">
+            <article class="footer-info">
+                <i class="fa-sharp fa-solid fa-credit-card icono-footer"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </article>
+            
+            <article class="footer-info">
+                <i class="fa-solid fa-gift icono-footer"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            </article>
+            
+            <article class="footer-info">
+                <i class="fa-solid fa-user-shield icono-footer"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            </article>
+        </div>
+        <div class="footer2">
+            <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </div>
     </footer>
 </body>
 </html>
