@@ -9,182 +9,253 @@ Verde: #39b54a;
 
 /*general*/
 * {
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 /*cierre general*/
 
 /*Body*/
 body {
-    font-family: 'Roboto';
-    background-color:#ebebeb;
+  font-family: "Roboto";
+  background-color: #ebebeb;
 }
 /* CIerre Body*/
 
 /*Header*/
 header {
-    background-color: #EAC926;
-    position: sticky; /*para mantener siempre al frente*/
-    top:0;
-    width: 100%;
-    z-index: 1;
+  background-color: #eac926;
+  position: sticky; /*para mantener siempre al frente*/
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .header1 {
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 
+.logo-busqueda{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+}
 .logo {
-    width: 50%;
+  width: 50%;
 }
-
-.search-bar{
-    border: none;
+form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-bar {
+  border: none;
 }
 
 .glass {
-    padding: 5px;
-    border-radius: 3px;
-    background-color: white;
-    font-size: 12px;
-
+  padding: 5px;
+  border-radius: 3px;
+  background-color: white;
+  font-size: 12px;
 }
 
-.search-bar{
-    border: 1px solid #666;
-    border-radius: 9px;
-    background-color: white;
-    padding: 3px;
-    font-size: small;
+.search-bar {
+  border: 1px solid #666;
+  border-radius: 9px;
+  background-color: white;
+  padding: 3px;
+  font-size: small;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .compra {
-    text-align: center; 
-    font-size: 12px;
+  text-align: center;
+  font-size: 12px;
 }
 
 .navegacion {
-    display: none;
+  display: none;
 }
 
 .burger-menu-contenedor {
-    text-align: center;
+  text-align: center;
 }
 
 .burger-menu {
-    font-size: 16;
-    color: white;
-    background-color: #1259c3;
-    border-radius: 3px;
-    padding: 9px;
+  font-size: 16;
+  color: white;
+  background-color: #1259c3;
+  border-radius: 3px;
+  padding: 9px;
 }
 /*Cierre header*/
 
 /*Banner*/
 .banner {
-    z-index: -3;
-    position: sticky;
+  z-index: -3;
+  position: sticky;
 }
 /*Cierre Banner*/
 
 /*Main*/
 section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 h2 {
-    font-size: 24px;
-    color: #666;
-    margin: 3vw;
+  font-size: 24px;
+  color: #666;
+  margin: 3vw;
 }
 
 p {
-    font-size: 12px
+  font-size: 12px;
 }
 
 .producto {
-    margin: 15px;
-    width: 60%;
-    background-color: white;
-    position: relative;
-    z-index: 0;
-    transition: all 1s;
+  margin: 15px;
+  width: 60%;
+  background-color: white;
+  position: relative;
+  z-index: 0;
+  transition: all 1s;
 }
 
 .imagen-producto {
-    position: relative;
-    z-index: -2;
+  position: relative;
+  z-index: -2;
 }
 
 .descripcion {
-    border-top: 3px solid #ebebeb;
-    background-color: white;
-    padding: 15px;
-    text-align: left;
-    position: relative;
-    z-index: 0;
+  border-top: 3px solid #ebebeb;
+  background-color: white;
+  padding: 15px;
+  text-align: left;
+  position: relative;
+  z-index: 0;
 }
 
 .precios {
-    display: flex; 
+  display: flex;
 }
 
 .fa-truck {
-    background-color: #fff;
-    color: #39b54a;
-    border: 1px solid #39b54a;
-    border-radius: 50%;
-    padding: 5px;
-    font-size: 16px;
-    width: 30px;
-    height: 30px;
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-    transition: all 1s;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  color: #39b54a;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  /*transition: all 1s;*/
 }
 
 .precio {
-    width: 45%;
+  width: 30%;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .descuento {
-    color: #39b54a;
-    width: 55%;
+  color: #39b54a;
+  width: 70%;
+  margin: 0;
 }
 
 .nombre-producto {
-    display: none;
-    color: #666;
+  display: none;
+  color: #666;
 }
 /*Cierre Main*/
 
 /*Footer*/
-footer{
-    display: flex;
-    flex-direction: column;
+footer {
+  display: flex;
+  flex-direction: column;
 }
-article{
-    text-align: center;
-    margin-bottom: 10px;
+article {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 article i {
-    color: blue;
-    font-size: 2em;
+  color: blue;
+  font-size: 2em;
 }
 
 /*Cierre Footer*/
+
+/*Media quierys*/
+
+@media (min-width: 769px) { /*Media Query Tablet*/
+  .header1{
+    flex-direction: row;
+  }
+  .nombre-producto {
+    display: block;
+  }  
+
+  .producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 40%;
+  }
+  
+.producto:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+.navegacion{
+  display: block;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+li a{
+  margin-left: 10px;
+}
+.burger-menu-contenedor{
+  display: none;
+}
+
+}
+
+@media (min-width: 1200px) { /*Media Query Laptop*/
+  li a{
+    margin-left: 50px;
+  }
+  .producto {
+    width: 20%;
+  }
+}

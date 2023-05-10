@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +13,121 @@
     <title>Registro</title>
 </head>
 <body>
-    
+    <header>
+        <section class="header1">
+            <div class="logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="">
+            </div>
+            
+            <form>
+                <div class="busqueda">    
+                    <input type="text" placeholder="Buscar productos, marcas" class="search-bar">         
+                    <i class="fa-solid fa-magnifying-glass glass"></i>
+                </div>
+            </form>
+
+            <p class="compra"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </section>
+        
+        <nav>
+            <ul class="navegacion lista1">
+                <li><a href="https://mercadoliebre-divianlopez-server.onrender.com//#">Ofertas</a></li>
+                <li><a href="https://mercadoliebre-divianlopez-server.onrender.com//#">Tiendas Oficiales</a></li>
+                <li><a href="https://mercadoliebre-divianlopez-server.onrender.com//#">Vender</a></li>
+                <li><a href="https://mercadoliebre-divianlopez-server.onrender.com//#">Ayuda</a></li>
+            </ul>
+
+            <ul class="navegacion lista2">
+                <li>
+                    <a href="https://mercadoliebre-divianlopez-server.onrender.com//register">Creá tu cuenta</a>
+                    <i class="fa-regular fa-id-card"></i></li>
+                <li>
+                    <a href="https://mercadoliebre-divianlopez-server.onrender.com//login">Ingresá</a>
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+                <li>
+                    <a href="https://mercadoliebre-divianlopez-server.onrender.com//#">Mis compras</a>
+                    <i class="fa-solid fa-basket-shopping"></i></li>
+            </ul>
+        </nav>
+
+        <div class="burger-menu-contenedor">    
+            <i class="fas fa-bars burger-menu" aria-hidden="true"></i>
+        </div> 
+    </header>
+    <main>
+    <div class="formulario">
+        <form action="https://mercadoliebre-divianlopez-server.onrender.com/register" method="POST">
+            <div>
+                <label for="name">Nombre y apellido:</label>
+                <input type="text" name="name" placeholder="Nombre y apellido" class="input">
+                <span class="feedback"></span>
+            </div>
+            <div>
+                <label for="usuario">Nombre de Usuario:</label>
+                <input type="text" name="usuario" placeholder="Nombre de Usuario" class="input">
+                <span class="feedback"></span>
+            </div>
+            <div>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" name="fecha" class="input">
+            </div>
+            <div>
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" name="domicilio" placeholder="Escriba la dirección de su domicilio" class="input">
+            </div>
+            <div>
+                <label for="tipo-usuario">Perfil del usuario:</label>
+                <label><input type="radio" name="tipo-usuario" value="Comprador">Comprador</label>
+                <label><input type="radio" name="tipo-usuario" value="Vendedor">Vendedor</label>
+            </div>
+            <div>
+                <label>Categorias de Interés:</label>
+                <label><input type="checkbox" value="electro">Electro</label>
+                <label><input type="checkbox" value="moda">Moda</label>
+                <label><input type="checkbox" value="hogar">Hogar</label>
+                <label><input type="checkbox" value="juguteria">Juguteria</label>   
+                <label><input type="checkbox" value="vidaSana">Vida Sana</label>
+            </div>
+            <div>
+                <label>Foto de Usuario:</label>
+                <input type="file" name="foto-usuario" class="input">
+            </div>
+            <div>
+                <label>Contraseña:</label>
+                <input type="password" required="" class="input">
+            </div>
+            <div>
+                <label>Confimar contraseña:</label>
+                <input type= "password" required="" class="input">
+            </div>
+            <div class="botones">
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar</button>
+            </div>
+            
+        </form>
+    </div>
+    </main>
+    <footer>
+        <article class="footer-info">
+            <i class="fa-sharp fa-solid fa-credit-card icono-footer"></i>
+            <h3>Pagá con tarjeta o en efectivo</h3>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </article>
+        
+        <article class="footer-info">
+            <i class="fa-solid fa-gift icono-footer"></i>
+            <h3>Envío gratis desde $ 2.500</h3>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </article>
+        
+        <article class="footer-info">
+            <i class="fa-solid fa-user-shield icono-footer"></i>
+            <h3>Seguridad, de principio a fin</h3>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+        </article>
+        
+        <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
 </body>
 </html>
